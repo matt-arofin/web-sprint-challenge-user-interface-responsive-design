@@ -112,8 +112,6 @@ header div {
     padding: 2%;
 }
 
-
-
 .links, .socials {
     display: flex;
     flex-flow: row nowrap;

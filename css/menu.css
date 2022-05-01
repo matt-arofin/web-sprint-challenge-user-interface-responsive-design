@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 
 h1 {
     font-size: 7.5rem;
+    text-align: center;
 }
 
 h2 {
@@ -107,7 +108,7 @@ header div {
 header nav div{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 /* spacer */
@@ -137,11 +138,46 @@ header nav div{
 .menu div {
     display: flex;
     flex-flow: row wrap;
-    padding: 20vw;
+    padding: 3vw;
+}
+
+.menu h2 {
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(0, 4, 17, .8);
 }
 
 .menu-container {
     background-color: rgb(0, 4, 17, .8);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+.menu-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    /* justify-content: flex-start; */
+    width: 40vw;
+    height: auto;
+}
+
+.menu-item {
+    flex-flow: row wrap;
+    /* justify-content: flex-start; */
+    width: 45vw;
+    padding: 20px;
+}
+
+.menu-item h4 {
+    flex: 50%;
+    font-size: 4rem;
+}
+
+.menu-item p {
+    font-size: 3rem;
 }
 
 /* footer section */
@@ -150,6 +186,11 @@ footer {
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+}
+
+.copyright {
+    font-size: 40%;
 }
 
 /* mobile media query */
